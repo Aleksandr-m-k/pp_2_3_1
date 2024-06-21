@@ -1,17 +1,20 @@
 package web.model;
 
 
-//@Entity
-//@Table (name="Users")
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "Users")
 public class User {
-    //    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    //@Column(name = "Id")
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    //@Column (name="Name")
+   // @Column(name = "Name")
     private String name;
-    //@Column (name="Surname")
-    private  String surname;
-    // @Column (name="Age")
+    //@Column(name = "Surname")
+    private String surname;
+    //@Column(name = "Age")
     private int age;
 
     public User() {
